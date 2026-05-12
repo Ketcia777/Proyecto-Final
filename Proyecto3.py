@@ -3,45 +3,6 @@
 # SISTEMA DE GESTIÓN DE PEDIDOS PARA EMPRESA DE VENTA DE VIDEOJUEGOS (SGP-VG)
 # ==============================================================================
 
-"""
-4) DIAGRAMA ENTIDAD RELACIÓN (Descripción)
-- CLIENTE (1) -- (*) PEDIDO
-- VIDEOJUEGO (1) -- (*) DETALLE_PEDIDO
-- PEDIDO (1) -- (*) DETALLE_PEDIDO
-- PEDIDO (1) -- (1) PAGO
-- PEDIDO (1) -- (1) ENVÍO
-
-5) FASES DEL PROYECTO
-1. Análisis y Estructura
-2. Módulo de Clientes (Carpeta: clientes)
-3. Módulo de Inventario (Carpeta: videojuegos)
-4. Módulo de Pedidos (Carpeta: pedidos)
-5. Módulo de Detalles (Carpeta: detalles)
-6. Módulo de Pagos (Carpeta: pagos)
-7. Módulo de Logística (Carpeta: envios)
-8. Reportes y Cierre (Carpeta: reportes)
-
-6) OBJETIVOS DEL PROYECTO
-- Gestionar eficientemente clientes y stock de videojuegos mediante modularización.
-- Automatizar el procesamiento de pedidos y facturación.
-- Seguimiento modular de estados de pedido y envío.
-
-7) ALCANCE DEL PROYECTO
-- Sistema modular separado por carpetas para cada entidad.
-- CRUD de Clientes y Videojuegos.
-- Creación de pedidos con detalle y cálculo de total.
-- Registro de pagos y gestión de estados de envío.
-
-8) LEVANTAMIENTO DE REQUISITOS
-- Requisitos Funcionales: Gestión CRUD completa y en memoria de Clientes, Videojuegos, Pedidos, Detalles (con validación de inventario/ACID manual), Pagos, Envíos y Reportes.
-- Restricción Transversal: Prohibido el uso de funciones ('def') o clases. Todo operado mediante ámbito global ('globals()').
-- Requisitos No Funcionales: Ejecución 100% consola, navegación por menú numérico y variables mantenibles.
-
-9) ANÁLISIS DE REQUISITOS
-- Priorización: Integración imperativa de módulos y transaccionalidad de stock en memoria son "Must Have".
-- Validación: Reversión y resta lineal del inventario evaluada de forma iterativa y estrictamente procedimental.
-"""
-
 # LISTAS GLOBALES (Base de Datos en Memoria)
 clientes = []
 videojuegos = []
